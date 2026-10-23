@@ -1,6 +1,7 @@
 # 装甲板检测练习项目
 
-这是配合浙大 Hello World 视觉组《Git & GitHub 教学》使用的练习项目。
+这是配合浙大 Hello World 视觉组《Git & GitHub 教学》使用的练习项目
+zheshi。
 
 ## 文件结构
 
