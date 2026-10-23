@@ -1,0 +1,12 @@
+build/
+deploy/
+*.o
+*.so
+.vscode/
+.idea/
+.DS_Store
+*.bag
+dataset/
+*.log
+*.key
+*.pem
