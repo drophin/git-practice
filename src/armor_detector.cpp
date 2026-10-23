@@ -14,5 +14,10 @@ cv::Mat ArmorDetector::preprocess(const cv::Mat& img) {
     cv::threshold(gray, binary, threshold, 255, cv::THRESH_BINARY);
     return binary;
 }
-
+// 用 HSV 颜色空间按颜色过滤灯条
+cv::Mat filterByHSV(const cv::Mat& img) {
+    cv::Mat hsv, mask;
+    cv::cvtColor(img, hsv, cv::COLOR_BGR2HSV);
+    cv::inRange(hsv, cv::Scalar(90, 80, 80), cv::Scalar(110, 255, 255), mask);
+    return mask;
 }  // namespace rm_auto_aim
